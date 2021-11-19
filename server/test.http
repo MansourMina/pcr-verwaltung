@@ -1,1 +1,22 @@
-GET http://127.0.0.1:3000/pcr
+GET http://127.0.0.1:3000/tests
+###
+GET http://127.0.0.1:3000/tests/3910287352
+###
+PATCH http://127.0.0.1:3000/tests/3910287352
+content-Type: application/json
+
+{
+    "result": "positiv"
+}
+###
+DELETE http://127.0.0.1:3000/tests/4776032562
+###
+POST http://127.0.0.1:3000/employees
+content-Type: application/json
+
+{
+    "first_name": "Mina",
+    "last_name": "Mansour",
+    "gebdatum": "21.11.2002",
+    "tel": "+436764590337"
+}

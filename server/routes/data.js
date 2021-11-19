@@ -4,14 +4,16 @@ const router = express.Router();
 
 const {
   getTests,
+  getTest,
   updateResult,
   deleteResult,
   addEmployee,
-} = require('../model/data');
+} = require('../controllers/data');
 
-router.get('/pcr', getTests);
-router.patch('/pcr/:id', updateResult);
-router.delete('/pcr/:id', deleteResult);
-router.post('/pcr', addEmployee);
+router.get('/tests', getTests);
+router.get('/tests/:qr', getTest);
+router.patch('/tests/:qr', updateResult);
+router.delete('/tests/:qr', deleteResult);
+router.post('/employees', addEmployee);
 
 module.exports = router;

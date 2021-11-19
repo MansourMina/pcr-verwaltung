@@ -7,6 +7,7 @@ const cors = require('cors');
 const routes = require('./routes/data');
 
 const { errorHandler, notFound } = require('./middleware/errorHandler');
+require('colors');
 
 require('dotenv').config();
 
