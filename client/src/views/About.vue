@@ -1,5 +1,21 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <v-container >
+    <div class="about">
+      <v-icon x-large>mdi-creative-commons</v-icon
+      ><span class="text-h5">By Mansour Mina</span>
+    </div>
+  </v-container>
 </template>
+
+<script>
+export default {};
+</script>
+
+<style lang="scss" scoped>
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40em;
+}
+</style>

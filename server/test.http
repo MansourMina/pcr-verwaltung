@@ -1,6 +1,14 @@
-GET http://127.0.0.1:3000/tests
+GET http://127.0.0.1:3000/tests?city=Salzburg
+###
+GET http://127.0.0.1:3000/activities
+###
+GET http://127.0.0.1:3000/tests/all/amount
+###
+GET http://127.0.0.1:3000/activities/mansour
 ###
 GET http://127.0.0.1:3000/tests/3910287352
+###
+GET http://127.0.0.1:3000/tests/Salzburg/amount
 ###
 PATCH http://127.0.0.1:3000/tests/3910287352
 content-Type: application/json
